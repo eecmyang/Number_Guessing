@@ -570,12 +570,12 @@ begin
 									Cmp_Save<=0;
 									Css<=0;
 								end
-					4'b1101:	begin									//D	//If 'A' key could debounced correctly,then this function should be able to complete
+					4'b1101:	begin									//D	
 									Segs_R<=Cmp_Save;
 									Prime_Save_R<=Segs_R;
 									Css<=8;
 								end
-					4'b1110:	begin									//E	//Half completed,Compared result on the left is able to be saved and displayed,but input still unable to
+					4'b1110:	begin									//E
 									Segs_R<=Disp_Save_R;
 									Prime_Save_R<=Segs_R;
 									//Segs_L<=Disp_Save_L;
